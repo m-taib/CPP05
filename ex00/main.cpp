@@ -6,7 +6,7 @@
 /*   By: mtaib <mtaib@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 17:24:08 by mtaib             #+#    #+#             */
-/*   Updated: 2023/10/25 16:01:45 by mtaib            ###   ########.fr       */
+/*   Updated: 2023/10/25 17:22:29 by mtaib            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main()
 {
 	try 
 	{
-		Bureaucrat b("mtaib", 1);
+		Bureaucrat b("mtaib",21);
 		b.incrementGrade();
 		std::cout << b << std::endl;
 	}

@@ -6,7 +6,7 @@
 /*   By: mtaib <mtaib@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:06:36 by mtaib             #+#    #+#             */
-/*   Updated: 2023/10/25 16:10:01 by mtaib            ###   ########.fr       */
+/*   Updated: 2023/10/25 17:24:11 by mtaib            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ class Form;
 class Bureaucrat
 {
 	public :
-		Bureaucrat();
 		Bureaucrat(const std::string& name, int grade);
 		Bureaucrat(const Bureaucrat& rhs);
 		Bureaucrat& operator=(const Bureaucrat& rhs);
@@ -34,6 +33,7 @@ class Bureaucrat
 		void			   signForm(Form& form);	
 	
 	private :
+		Bureaucrat();
 		const std::string _name;
 		int				  _grade;
 		class GradeTooHighException : public std::exception
